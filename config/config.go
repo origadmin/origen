@@ -1,3 +1,6 @@
+// Copyright (c) 2024 OrigAdmin. All rights reserved.
+
+// Package config is the config package for origen
 package config
 
 import (
@@ -65,4 +68,14 @@ var (
 // C is a singleton of Config
 func C() Config {
 	return config
+}
+
+// LoadGlobal loads config from file
+func LoadGlobal(path string) {
+	once.Do(func() {
+		err := Load(path, &config)
+		if err != nil {
+			panic(err)
+		}
+	})
 }

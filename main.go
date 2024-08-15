@@ -3,7 +3,7 @@
 //go:generate swag init --parseDependency --generalInfo ./main.go --output ./docs
 // #go:generate docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate --git-repo-id swagger-api --git-user-id origadmin -i /local/docs/swagger.json -g go-gin-server -o /local/docs/v3
 
-// Package main is the main package
+// Package main is the main package for origen
 package main
 
 import (
