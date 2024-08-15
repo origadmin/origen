@@ -40,7 +40,7 @@ var (
 	treeState = ""
 	date      = ""
 	builtBy   = ""
-	debug     = false
+	// debug     = false
 )
 
 // rootCmd represents the base command when called without any subcommands
