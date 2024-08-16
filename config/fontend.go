@@ -4,4 +4,5 @@
 package config
 
 type Fontend struct {
+	Enable bool
 }

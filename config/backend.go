@@ -4,4 +4,5 @@
 package config
 
 type Backend struct {
+	Enable bool
 }

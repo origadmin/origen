@@ -16,17 +16,19 @@ const Application = `Origen`
 
 // Config is the configuration of admin-cli.
 type Config struct {
-	Application string    `json:"application" yaml:"application" toml:"application"`    // app_name
-	PackageName string    `json:"package_name" yaml:"package_name" toml:"package_name"` // package_name
-	Author      string    `json:"author" yaml:"author" toml:"author"`                   // author
-	WirePath    string    `json:"wire_path" yaml:"wire_path" toml:"wire_path"`          // wire_path
-	SwaggerPath string    `json:"swagger_path" yaml:"swagger_path" toml:"swagger_path"` // swagger_path
-	Fontend     Fontend   `json:"fontend" yaml:"fontend" toml:"fontend"`                // fontend
-	Backend     Backend   `json:"backend" yaml:"backend" toml:"backend"`                // backend
-	Database    Database  `json:"database" yaml:"database" toml:"database"`             // database
-	Extension   Extension `json:"extension" yaml:"extension" toml:"extension"`          // extension
-	Description string    `json:"description" yaml:"description" toml:"description"`    // description
-	Version     string    `json:"version" yaml:"version" toml:"version"`                // version
+	Application string
+	PackageName string
+	Author      string
+	WirePath    string
+	SwaggerPath string
+	Description string
+	Version     string
+	App         App                `json:"app" yaml:"app" toml:"app"`                   // app
+	Fontend     Fontend            `json:"fontend" yaml:"fontend" toml:"fontend"`       // fontend
+	Backend     Backend            `json:"backend" yaml:"backend" toml:"backend"`       // backend
+	Database    Database           `json:"database" yaml:"database" toml:"database"`    // database
+	Extension   Extension          `json:"extension" yaml:"extension" toml:"extension"` // extension
+	Services    map[string]Service `json:"services" yaml:"services" toml:"services"`    // services
 }
 
 // Save saves config to file

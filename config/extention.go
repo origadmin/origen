@@ -4,4 +4,5 @@
 package config
 
 type Extension struct {
+	Enable bool
 }
