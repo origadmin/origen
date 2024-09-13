@@ -3,8 +3,8 @@
 // Package config is the config package for origen
 package config
 
-type Fontend struct {
-	Enable       bool
+type Application struct {
+	Type         string // 例如: "web", "mobile", "desktop"
 	TemplatePath string
 	OutputPath   string
 }
