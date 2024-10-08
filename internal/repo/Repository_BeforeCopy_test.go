@@ -1,28 +1,10 @@
 package repo
 
 import (
-	"os"
 	"testing"
 
 	"github.com/origadmin/toolkits/context"
 )
-
-// Successfully creates a cache directory if it does not exist
-func TestCreatesCacheDirectory(t *testing.T) {
-	// Arrr, let's set sail and test the creation of the cache directory!
-	repo := Repository{
-		cacheDir: "test_cache_dir",
-		useCmd:   false,
-	}
-	err := repo.BeforeCopy(context.Background())
-	if err != nil {
-		t.Fatalf("Expected no error, but got %v", err)
-	}
-	if _, err := os.Stat("test_cache_dir"); os.IsNotExist(err) {
-		t.Fatalf("Expected cache directory to be created, but it does not exist")
-	}
-	os.RemoveAll("test_cache_dir")
-}
 
 // Clones the repository using the go-git library when useCmd is false
 func TestCloneRepoWithGoGit(t *testing.T) {

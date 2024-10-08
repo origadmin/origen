@@ -120,7 +120,7 @@ func CloneRepoWithCmd(ctx context.Context, repoURL, cacheDir, tag string) error 
 // // If a tag is specified, it checks out that tag; otherwise, it fetches the latest version.
 func UpdateRepoWithCmd(ctx context.Context, cacheDir, tag string) error {
 	// Pull the latest changes
-	cmd := exec.CommandContext(ctx, "git", "pull", "origin", "main")
+	cmd := exec.CommandContext(ctx, "git", "pull", "origin")
 	cmd.Dir = cacheDir
 	if err := cmd.Run(); err != nil {
 		return errors.Wrap(err, "failed to pull repository")
