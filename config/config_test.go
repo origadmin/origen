@@ -13,9 +13,9 @@ import (
 
 func TestC(t *testing.T) {
 	config := config.Config{
-		Application: "Origen",
-		PackageName: "origen",
-		Author:      "OrigAdmin",
+		Project:     "OrigenProject",
+		PackageName: "application",
+		Author:      "Origen",
 		WirePath:    "wire",
 		SwaggerPath: "swag",
 		Fontend: config.Fontend{

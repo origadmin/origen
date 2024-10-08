@@ -12,11 +12,6 @@ import (
 	"github.com/origadmin/toolkits/codec"
 )
 
-const (
-	Project     = "origin"
-	PackageName = "application"
-)
-
 // Config is the configuration of admin-cli.
 type Config struct {
 	Project     string             `json:"project" default:"origin"`
