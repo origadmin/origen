@@ -1,6 +1,6 @@
 # [Origen](https://github.com/origadmin/origen) efficiency assistant
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > A OrigAdmin efficiency assistant that provides project initialization, code generation, business integration, improves work efficiency, and quickly completes the development process.
@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://www.exuan.org"><img src="https://avatars.githubusercontent.com/u/1683921?v=4?s=100" width="100px;" alt="xuan"/><br /><sub><b>xuan</b></sub></a><br /><a href="#infra-exuan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/origadmin/origen/commits?author=exuan" title="Tests">⚠️</a> <a href="https://github.com/origadmin/origen/commits?author=exuan" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/godcong"><img src="https://avatars.githubusercontent.com/u/2727298?v=4?s=100" width="100px;" alt="godcong"/><br /><sub><b>godcong</b></sub></a><br /><a href="#infra-godcong" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/origadmin/origen/commits?author=godcong" title="Tests">⚠️</a> <a href="https://github.com/origadmin/origen/commits?author=godcong" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
