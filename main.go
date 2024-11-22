@@ -48,7 +48,7 @@ func init() {
 	rootCmd.CompletionOptions.HiddenDefaultCmd = true
 	rootCmd.CompletionOptions.DisableNoDescFlag = true
 	// rootCmd.SetUsageTemplate(resources.Usage)
-	rootCmd.AddCommand(cmd.InitCmd())
+	rootCmd.AddCommand(cmd.InitCmd(), cmd.NewCmd())
 	rootCmd.Version = goinfo.String()
 }
 

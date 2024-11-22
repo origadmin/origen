@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"os/exec"
 
 	"github.com/spf13/cobra"
@@ -15,6 +16,8 @@ func NewCmd() *cobra.Command {
 			if err != nil {
 				return err
 			}
+			fmt.Println("lookpath:", path)
+			return nil
 		},
 	}
 }
