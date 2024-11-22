@@ -13,30 +13,43 @@ import (
 
 func TestC(t *testing.T) {
 	config := config.Config{
-		Project:     "OrigenProject",
-		PackageName: "application",
-		Author:      "Origen",
-		WirePath:    "wire",
-		SwaggerPath: "swag",
-		Fontend: config.Fontend{
-			Enable: false,
-		},
-		Backend: config.Backend{
-			Enable: true,
-		},
-		Database: config.Database{
-			Enable: false,
-		},
-		Extension: config.Extension{
-			Enable: false,
-		},
-		Services: map[string]config.Service{
-			"user": {
-				Enable: true,
+		Organization: "OrigAdmin",
+		Application:  "Origen",
+		Project:      "Origen",
+		Version:      "v0.0.1",
+		Type:         config.TypeProject,
+		Mods: []config.Mod{
+			{
+				Name:   "",
+				Repo:   "",
+				Tag:    "",
+				Branch: "",
+				Commit: "",
 			},
 		},
-		Description: "Origen is a CLI scaffolding for quickly setting up a project.",
-		Version:     "v0.0.0",
+		Platform: []config.Platform{
+			{
+				Name:    "backend",
+				Version: "v0.0.1",
+				Layers:  nil,
+			},
+		},
+		Web: config.Web{
+			TODO: "todo",
+		},
+		Static: "./static",
+		Plugins: []config.Plugin{
+			{
+				Name: "name",
+				TODO: "todo",
+			},
+		},
+		Resources: config.Resources{
+			Path: "./resources",
+		},
+		Document: config.Document{
+			Title: "title",
+		},
 	}
 
 	err := codec.EncodeTOMLFile("config.toml", config)

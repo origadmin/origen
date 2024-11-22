@@ -14,19 +14,18 @@ import (
 
 // Config is the configuration of admin-cli.
 type Config struct {
-	Project     string             `json:"project" default:"origin"`
-	PackageName string             `json:"package_name" default:"application"`
-	Author      string             `json:"author" default:"Origen"`
-	WirePath    string             `json:"wire_path"`
-	SwaggerPath string             `json:"swagger_path"`
-	Description string             `json:"description"`
-	Application Application        `json:"application" yaml:"application" toml:"application"` // application
-	Fontend     Fontend            `json:"fontend" yaml:"fontend" toml:"fontend"`             // fontend
-	Backend     Backend            `json:"backend" yaml:"backend" toml:"backend"`             // backend
-	Database    Database           `json:"database" yaml:"database" toml:"database"`          // database
-	Extension   Extension          `json:"extension" yaml:"extension" toml:"extension"`       // extension
-	Services    map[string]Service `json:"services" yaml:"services" toml:"services"`          // services
-	Version     string             `json:"version"`
+	Organization string
+	Application  string
+	Project      string
+	Version      string
+	Type         Type
+	Mods         []Mod
+	Platform     []Platform // TODO
+	Web          Web
+	Static       string
+	Plugins      []Plugin
+	Resources    Resources
+	Document     Document
 }
 
 // Save saves config to file

@@ -3,6 +3,6 @@
 // Package config is the config package for origen
 package config
 
-type Extension struct {
-	Enable bool
+type Resources struct {
+	Path string
 }

@@ -3,8 +3,7 @@
 // Package config is the config package for origen
 package config
 
-type Fontend struct {
-	Enable       bool
-	TemplatePath string
-	OutputPath   string
+type Plugin struct {
+	Name string
+	TODO string
 }
