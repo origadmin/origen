@@ -71,4 +71,3 @@ issues:
     - example
   exclude-files:
     - _default\.go
-

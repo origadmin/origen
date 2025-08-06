@@ -100,7 +100,7 @@ deps:
 
 .PHONY: config
 # generate internal proto or use ./internal/generate.go
-config: 
+config:
 	protoc ${PROTO_PATH} \
 	--go_out=paths=source_relative:./internal \
 	--validate_out=lang=go:. \

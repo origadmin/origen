@@ -26,7 +26,7 @@ We contribute to the tools 🔧 we rely on to build and run GitHub, while also m
 
 See what's next on our [public roadmap](https://github.com/github/roadmap) ✨ and [let us know](https://github.com/github/feedback) if you have any suggestions 🙇‍♂️. Oh, and by the way, we are always hiring talented, passionate people to [join our team](https://github.com/about/careers) 🙌.
 
-<details> 
+<details>
 	<summary>"Tell me more, I can't get enough!"</summary>
 	<br>
 	<ul>
