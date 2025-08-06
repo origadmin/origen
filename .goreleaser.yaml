@@ -105,5 +105,5 @@ release:
     name: origen
   header: |
     # Changelog
-    
+
     ## [{{ .Tag }}](https://github.com/OrigAdmin/origen/compare/{{ .PreviousTag }}...{{ .Tag }}) ({{ .Date }})
