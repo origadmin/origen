@@ -111,7 +111,7 @@ func ExecWireGen(dir, path string) error {
 	args := []string{"gen", path}
 	if localPath == "" {
 		localPath = "go"
-		args = append([]string{"run", "-mod=mod", "github.com/google/wire/cmd/wire"}, args...)
+		args = append([]string{"run", "github.com/google/wire/cmd/wire"}, args...)
 	}
 	cmd := exec.Command(localPath, args...)
 	cmd.Dir = dir
