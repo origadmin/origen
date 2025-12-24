@@ -158,7 +158,7 @@ release:
 #.PHONY: server
 ## server used generate a service at first
 #server:
-#	kratos proto server -t ./internal/mods/helloworld/service ./api/v1/protos/helloworld/greeter.proto
+#	kratos proto server -t ./internal/features/helloworld/service ./api/v1/protos/helloworld/greeter.proto
 #
 #.PHONY: client
 ## client used when proto file is in the same directory
